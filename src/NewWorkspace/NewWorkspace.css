@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    color: white;
+    background-color: #202327;
+}
+
+.parentContainer {
+    width: 90%;
+    max-width: 1200px;
+    height: 800px;
+    border-radius: 15px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.new_workspace_container {
+    width: 90%;
+    max-width: 1000px;
+    height: 600px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 40px;    
+    background-color: #17191C;
+}
+
+.tittleNew {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    position: relative;
+    top: -10px;
+}
+
+.inputs {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    left: 60px;
+}
+
+.inputText {
+    width: 100%;
+    max-width: 700px;
+    height: 70px;
+    border-radius: 10px;
+    font-size: 25px;
+    margin-bottom: 40px;
+    padding-left: 20px;
+    background-color: #202327;
+    border: none;
+    color: #F8F8F8;
+}
+
+.buttons {
+    height: auto;
+    width: auto;
+    display: inline-flex;
+    gap: 30px;
+    position: relative;
+    top: 10px;
+    border: none;
+}
+
+.buttonNew {
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+    background-color: #17191C;
+    color: #F8F8F8;
+}
+
+
+@media screen and (max-width: 745px) {
+    .tittleNew{
+        font-size: 32px;
+    }
+
+    .buttonNew{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .tittleNew{
+        font-size: 28px;
+    }
+    .tittleNew{
+        font-size: 26px;
+    }
+    .inputs{
+        position: static;
+    }
+
+    .buttonNew{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .tittleNew{
+        font-size: 13px;
+        font-weight: 800;
+    }
+    .new_workspace_container{
+        height: 430px;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .inputs{
+        position: static;
+    }
+    .buttonNew{
+        width: 200px;
+    }
+    .parentContainer{
+        height: 600px;
+    }
+
+    .newWorkspace{
+        bottom: 0;
+        height: 40px;
+    }
+}

@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    color: white;
+}
+
+.containerMensajes{
+    height: 100vh;
+    width: 100vw;
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: #1F2225;
+    align-items: center;
+    justify-content: center;
+}
+
+.listaCanales{
+    width: 15%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    position: relative;
+    background-color: #141618;
+    border-radius: 12px;
+    }
+
+
+.canales{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 20px;
+    gap: 15px;
+    overflow-y: scroll;
+    scrollbar-width:none;
+}
+
+.tittleCanal{
+    font-size: 30px;
+    color: #efefef;
+    font-weight: 900;
+}
+
+.mensajes{
+    width: 65%;
+    height: 90%;
+    padding: 55px;
+    padding-bottom: 18px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #1A1D21;
+    border-radius: 12px;
+}
+.nombreCanal{
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+.buttonCanal{
+all: unset;
+border-radius: 5px;
+font-size: 20px;
+color: #d1d2d3;
+}
+
+.buttonCrearCanal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.crearCanal{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    border-radius: 15px;
+    background-color:#d1d2d3;
+}
+
+.listaMensajes{
+    width: auto;
+    height: 90%;
+    position: relative;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.listaMensajes .noMensajes{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.formMensaje{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.formMensaje input{
+    height: 100%;
+    width: 80%;
+    border-radius: 15px;
+    background-color: #222529;
+    border: none;
+    padding-left: 20px;
+    color: #d1d2d3;
+    font-size: 18px;
+}
+
+.formMensaje button{
+    width: 15%;
+    max-width: 110px;
+    height: 100%;
+    border-radius: 15px;   
+    background-color:#222529;
+    border: none;
+    color: #d1d2d3;
+    font-size: 18px;
+}
+
+.mensaje{
+display: flex;
+flex-direction: column;
+overflow-wrap: break-word;;
+gap: 4px;
+font-size: 18px;
+color: black;
+}
+
+.estados{
+    display: flex;
+    justify-content: space-between;
+    color: #0000009d;
+}
+
+.buttonSalir{
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4%;
+    height: 33px;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: #1A1D21;
+    position: fixed;
+    top: 10px;
+    left: 15px;
+    color:#ffffff
+}
+
+.seleccionarCanal{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 100px;
+    font-size: 20px;
+}
+
+.buttonCrearCanal{
+    width: 100%;
+    height: 50px;
+}
+@media screen and (max-width: 1090px) {
+    .buttonSalir{
+        height: 27px;
+        width: 7%;
+        top: 5px;
+        left: 10px;
+        font-size: 14px;
+    }    
+    .listaCanales{
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .containerMensajes{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .listaCanales{
+        width: 95%;
+        height: 30%;
+    }
+
+    .mensajes{
+        width: 95%;
+        height: 60%;
+        padding: 20px;
+    }
+
+    .buttonSalir{
+        height: 27px;
+        width: 18%;
+        top: 8px;
+        left: 15px;
+        font-size: 14px;
+    }
+
+
+
+    .crearCanal{
+        margin-top: 5px;
+        margin-bottom: 10px;
+        width: 100%;
+        max-width: 270px;
+    }
+
+    .tittleCanal{
+        font-size: 27px;
+    }
+
+    .canales{
+        overflow-y: auto;
+    }
+    .listaMensajes{
+        width: 90%;
+    }
+    .mensaje{
+        font-size: 17px;
+    }
+
+    .nombreCanal{
+        width: 100%;
+    }
+
+    .formMensaje button{
+        width: 25%;
+        font-size: 16px;
+    }
+
+    .formMensaje input{
+        font-size: 15px;
+    }
+}
